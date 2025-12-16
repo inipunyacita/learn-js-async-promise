@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container p-5">
+        <h1>User Data Searcher</h1>
+
+        <div class="search-box">
+            <label>Your ID:</label><br>
+            <input type="text" id="keywordInput" placeholder="e.g. 1">
+            <button onclick="getData()">Submit</button>
+            <p id="loadingMsg" class="loading">Fetching data from API...</p>
+        </div>
+
+        <div id="resultArea">
+            <table>
+                <thead id="resultTableHead" hidden>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/src/scripts.js"></script>
+</body>
+
+</html>
