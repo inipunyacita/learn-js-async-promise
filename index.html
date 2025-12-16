@@ -10,14 +10,14 @@
 <body>
     <div class="container p-5">
         <h1>User Data Searcher</h1>
-
+        <!-- search box -->
         <div class="search-box">
             <label>Your ID:</label><br>
             <input type="text" id="keywordInput" placeholder="e.g. 1">
             <button onclick="getData()">Submit</button>
             <p id="loadingMsg" class="loading">Fetching data from API...</p>
         </div>
-
+        <!-- result area -->
         <div id="resultArea">
             <table>
                 <thead id="resultTableHead" hidden>
@@ -31,6 +31,30 @@
                     </tr>
                 </thead>
                 <tbody id="resultTableBody">
+                </tbody>
+            </table>
+        </div>
+        <h1>User Data Searcher using Promise</h1>
+        <div class="search-box">
+            <label>Your ID:</label><br>
+            <input type="text" id="keywordInputPromise" placeholder="e.g. 1">
+            <button onclick="getDataPromise()">Submit</button>
+            <p id="loadingMsgPromise" class="loadingMsgPromise" hidden>Fetching data from API...</p>
+        </div>
+        <!-- result area -->
+        <div id="resultAreaPromise">
+            <table>
+                <thead id="resultTableHeadPromise" hidden>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTableBodyPromise">
                 </tbody>
             </table>
         </div>
